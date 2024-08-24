@@ -15,7 +15,7 @@ def resume():
     return render_template('resume.html')
 
 @app.route('/this-page')
-def resume():
+def thisPage():
     return render_template('this-page.html')
 
 if __name__ == '__main__':
