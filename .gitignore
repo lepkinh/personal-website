@@ -1,1 +1,16 @@
+# Python
 /venv
+/__pycache__
+
+# Node.js
+/node_modules
+/build
+
+# Env vars
+.env
+
+# Logs
+*.log
+
+# vscode settings
+.vscode/
