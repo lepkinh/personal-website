@@ -1,14 +1,11 @@
 {% extends "layout.html" %}
 
-{% block title %}
-    Home Page
-{% endblock %}
+{% block title %}About Me - My Website{% endblock %}
 
-{% block main %}
-    <body>
-        <noscript>You need to enable JavaScript to run this app.</noscript>
-        <div id="root"></div>
-        <!-- React and Chakra UI will mount here -->
+{% block content %}
+<div id="root"></div>
 
-    </body>
+<!-- Include React and your custom script -->
+<script src="static/js/bundle.js"></script> <!-- This path may vary depending on your build setup -->
 {% endblock %}
+    

@@ -1,6 +1,6 @@
 from flask import Flask, render_template
 
-app = Flask(__name__)
+app = Flask(__name__, static_folder="my-portfolio/build/static", template_folder="my-portfolio/build")
 
 @app.route('/')
 def index():
@@ -18,5 +18,5 @@ def resume():
 def thisPage():
     return render_template('this-page.html')
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     app.run(debug=True)
