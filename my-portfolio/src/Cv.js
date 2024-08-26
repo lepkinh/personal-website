@@ -1,6 +1,18 @@
 // Cv.js
 import React from 'react';
-import { Box, Button, VStack, Link, Text } from '@chakra-ui/react';
+import { ChakraProvider, Box, Button, VStack, Link, Text, extendTheme } from '@chakra-ui/react';
+
+// Darker theme
+const theme = extendTheme({
+  styles: {
+    global: {
+      body: {
+        bg: 'gray.900', // Dark background color
+        color: 'gray.200', // Light text color
+      },
+    },
+  },
+});
 
 function Cv() {
   const resumeUrl = "/path/to/your/resume.pdf"; // ADD RESUME HERE, I need to redo mine still
@@ -14,7 +26,7 @@ function Cv() {
 
       {/* Download Button */}
       <Link href={resumeUrl} download>
-        <Button colorScheme="teal" variant="solid">Download Resume</Button>
+        <Button colorScheme="teal" variant="solid">Download as PDF</Button>
       </Link>
     </VStack>
   );

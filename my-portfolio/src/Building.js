@@ -1,5 +1,7 @@
 import React from 'react';
-import { ChakraProvider, Container, Heading, Text, VStack, HStack, Box, extendTheme } from '@chakra-ui/react';
+import { ChakraProvider, Container, Heading, Text, VStack, HStack, Box, extendTheme, Link, Stack, Icon } from '@chakra-ui/react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { FaLinkedin, FaGithub, FaTwitter } from 'react-icons/fa';
 
 // Darker theme
 const theme = extendTheme({
@@ -67,6 +69,26 @@ function Building() {
           </Box>
           {/* Add more projects as needed */}
         </VStack>
+
+        {/* Links to Other Routes */}
+        <Stack direction="row" spacing={4} justify="center" mt={10}>
+          <Link href="/" color="teal.200">Home</Link>
+          <Link href="/building" color="teal.200">Code & Building</Link>
+          <Link href="/cv" color="teal.200">CV</Link>
+        </Stack>
+
+        {/* Links to Socials */}
+        <HStack spacing={6} justify="center" mt={4}>
+          <Link href="https://www.linkedin.com/in/nicolaslepki/" isExternal>
+            <Icon as={FaLinkedin} boxSize={8} color="teal.200" />
+          </Link>
+          <Link href="https://github.com/lepkinh" isExternal>
+            <Icon as={FaGithub} boxSize={8} color="teal.200" />
+          </Link>
+          <Link href="https://x.com/fixedawakening" isExternal>
+            <Icon as={FaTwitter} boxSize={8} color="teal.200" />
+          </Link>
+        </HStack>
       </Container>
     </ChakraProvider>
   );
