@@ -26,7 +26,7 @@ function App() {
           <HStack spacing={6} align="center">
             {/* Image Placeholder */}
             <Box boxSize="150px" bg="gray.200" borderRadius="full" overflow="hidden">
-              <Image src="https://preview.redd.it/n3fwd81de3521.png?width=640&crop=smart&auto=webp&s=be459b3d8f43e7e8c9bc59382768b575881a646c" alt="hi" boxSize="150px" objectFit="cover" />
+              <Image src="https://media.discordapp.net/attachments/829085119960580170/1277674570333163582/IMG_7626.png?ex=66ce06ab&is=66ccb52b&hm=5b4940db2cd276c8c461fcb0bbb5882a03968418cb03e89008c8423d3230c635&=&format=webp&quality=lossless&width=649&height=700" alt="hi" boxSize="150px" objectFit="cover" />
             </Box>
 
             {/* Name and Description */}
