@@ -18,7 +18,7 @@ function App() {
     <ChakraProvider theme={theme}>
       <Container maxW="container.md" py={10}>
         {/* About Me Section */}
-        <VStack spacing={6} align="start"> {/* Reduced spacing from 8 to 6 */}
+        <VStack spacing={6} align="start">
           <HStack spacing={6} align="center">
             {/* Image Placeholder */}
             <Box boxSize="150px" bg="gray.200" borderRadius="full" overflow="hidden">
@@ -26,7 +26,7 @@ function App() {
             </Box>
 
             {/* Name and Description */}
-            <VStack spacing={1} align="start"> {/* Less space between name and description */}
+            <VStack spacing={1} align="start">
               <Heading as="h1" size="md">
                 Nicolas Lepki
               </Heading>
@@ -37,7 +37,7 @@ function App() {
           </HStack>
 
           {/* About Me Text */}
-          <VStack spacing={2} align="start"> {/* Reduced spacing to tighten the layout */}
+          <VStack spacing={2} align="start">
             <Text fontSize="l" color="white">About</Text>
             <Text fontSize="l" textAlign="left" color="gray.500">
               I am a computer engineering student at McMaster University, where I study circuits, embedded systems, electronics, software development, and mathematics. I apply these areas of study to the fields of robotics and artificial intelligence. I also develop software as a hobby.
@@ -48,7 +48,7 @@ function App() {
           <HStack spacing={4} wrap="wrap" justify="center">
             <Box p={5} shadow="md" borderWidth="1px" maxW="800px">
               <Heading fontSize="xl">Programming</Heading>
-              <Text mt={4}>Python, C/C++, SQL Databases, JavaScript HTML & CSS</Text>
+              <Text mt={4}>Python, C/C++, SQL Databases, JavaScript, HTML & CSS</Text>
             </Box>
             <Box p={5} shadow="md" borderWidth="1px" maxW="800px">
               <Heading fontSize="xl">Hardware & Electronics</Heading>
