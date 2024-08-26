@@ -1,5 +1,8 @@
 import React from 'react';
-import { ChakraProvider, Box, Container, Heading, Text, VStack, HStack, Image, Link, Stack, extendTheme } from '@chakra-ui/react';
+import { ChakraProvider, Box, Container, Heading, Text, VStack, HStack, Image, Icon, Link, Stack, extendTheme } from '@chakra-ui/react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { FaLinkedin, FaGithub, FaTwitter } from 'react-icons/fa';
+import Resume from './Resume';
 
 // Darker theme
 const theme = extendTheme({
@@ -61,17 +64,40 @@ function App() {
             </Box>
           </HStack>
         </VStack>
-        
+
         {/* Links to Other Routes */}
-        <Stack direction="row" spacing={4} justify="center" mt={10}>
+        <Stack direction="row" spacing={4} justify="center" mt={4}>
           <Link href="/" color="teal.200">Home</Link>
           <Link href="/projects" color="teal.200">Projects</Link>
           <Link href="/resume" color="teal.200">Resume</Link>
-          <Link href="/contact" color="teal.200">Contact</Link>
         </Stack>
-      </Container>
+
+        {/* Links to Socials */}
+        <HStack spacing={6} justify="center" mt={4}>
+          <Link href="https://www.linkedin.com/in/nicolaslepki/" isExternal>
+            <Icon as={FaLinkedin} boxSize={8} color="teal.200" />
+          </Link>
+          <Link href="https://github.com/lepkinh" isExternal>
+            <Icon as={FaGithub} boxSize={8} color="teal.200" />
+          </Link>
+          <Link href="https://x.com/fixedawakening" isExternal>
+            <Icon as={FaTwitter} boxSize={8} color="teal.200" />
+          </Link>
+        </HStack>
+      </Container>\
     </ChakraProvider>
   );
 }
 
-export default App;
+function Main() {
+  return (
+    <Router>
+      <Routes>
+        <Route path="/" element={<App />} />
+        <Route path="/resume" element={<Resume />} />
+      </Routes>
+    </Router>
+  );
+}
+
+export default Main;
