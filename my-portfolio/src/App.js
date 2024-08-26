@@ -2,7 +2,8 @@ import React from 'react';
 import { ChakraProvider, Box, Container, Heading, Text, VStack, HStack, Image, Icon, Link, Stack, extendTheme } from '@chakra-ui/react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { FaLinkedin, FaGithub, FaTwitter } from 'react-icons/fa';
-import Resume from './Resume';
+import Building from './Building';
+import Cv from './Cv';
 
 // Darker theme
 const theme = extendTheme({
@@ -68,8 +69,8 @@ function App() {
         {/* Links to Other Routes */}
         <Stack direction="row" spacing={4} justify="center" mt={4}>
           <Link href="/" color="teal.200">Home</Link>
-          <Link href="/projects" color="teal.200">Projects</Link>
-          <Link href="/resume" color="teal.200">Resume</Link>
+          <Link href="/building" color="teal.200">Code & Building</Link>
+          <Link href="/cv" color="teal.200">CV</Link>
         </Stack>
 
         {/* Links to Socials */}
@@ -94,7 +95,8 @@ function Main() {
     <Router>
       <Routes>
         <Route path="/" element={<App />} />
-        <Route path="/resume" element={<Resume />} />
+        <Route path="/building" element={<Building />} />
+        <Route path="/cv" element={<Cv />} />
       </Routes>
     </Router>
   );

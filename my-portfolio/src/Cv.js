@@ -1,8 +1,8 @@
-// Resume.js
+// Cv.js
 import React from 'react';
 import { Box, Button, VStack, Link, Text } from '@chakra-ui/react';
 
-function Resume() {
+function Cv() {
   const resumeUrl = "/path/to/your/resume.pdf"; // ADD RESUME HERE, I need to redo mine still
 
   return (
@@ -20,4 +20,4 @@ function Resume() {
   );
 }
 
-export default Resume;
+export default Cv;
