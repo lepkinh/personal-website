@@ -17,18 +17,18 @@ function Building() {
   return (
     <ChakraProvider theme={theme}>
       <Container maxW="container.md" py={10}>
-        <VStack spacing={6} align="start">
-          <Heading as="h1" size="xl">
+        <VStack spacing={1} align="start">
+          <Heading as="h1" size="md">
             Code & Building
           </Heading>
-          <Text fontSize="lg" color="gray.400">
+          <Text fontSize="md" color="gray.400">
             Full-stack development, machine learning, and hardware projects.
           </Text>
         </VStack>
 
         {/* Software Projects Section */}
         <VStack spacing={6} align="start" mt={10}>
-          <Heading as="h2" size="xl" color="teal.200">
+          <Heading as="h2" size="md" color="teal.200">
             Software Projects
           </Heading>
           <Box p={5} shadow="md" borderWidth="1px" bg="gray.800">
@@ -42,7 +42,7 @@ function Building() {
 
         {/* Machine Learning Projects Section */}
         <VStack spacing={6} align="start" mt={10}>
-          <Heading as="h2" size="xl" color="teal.200">
+          <Heading as="h2" size="md" color="teal.200">
             Machine Learning Projects
           </Heading>
           <Box p={5} shadow="md" borderWidth="1px" bg="gray.800">
@@ -56,7 +56,7 @@ function Building() {
 
         {/* Hardware Projects Section */}
         <VStack spacing={6} align="start" mt={10}>
-          <Heading as="h2" size="xl" color="teal.200">
+          <Heading as="h2" size="md" color="teal.200">
             Hardware Projects
           </Heading>
           <Box p={5} shadow="md" borderWidth="1px" bg="gray.800">
