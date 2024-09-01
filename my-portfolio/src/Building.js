@@ -36,12 +36,13 @@ function Building() {
             Software Projects
           </Heading>
           <Box p={5} shadow="md" borderWidth="1px" bg="gray.800">
-            <Text fontSize="md" color="gray.300">Project 1: Description, img, link for the software project.</Text>
+            <Text fontSize="md" color="gray.300">Put sodoku solver here, also consider editing mock finance app and adding it into the second section</Text>
           </Box>
+          {/*
           <Box p={5} shadow="md" borderWidth="1px" bg="gray.800">
             <Text fontSize="md" color="gray.300">Project 2: Description, img, link for another software project.</Text>
           </Box>
-          {/* Add more projects as needed */}
+          */}
         </VStack>
 
         {/* Machine Learning Projects Section */}
@@ -75,13 +76,14 @@ function Building() {
             </Text>
           </Box>
 
+          {/*}
           <Box p={5} shadow="md" borderWidth="1px" bg="gray.800">
             <Text fontSize="md" color="gray.300">ML Project 2: Description, img, link for another machine learning project.</Text>
-          </Box>
+          </Box> */}
           {/* Add more projects as needed */}
         </VStack>
-
-        {/* Hardware Projects Section */}
+        
+        {/* Hardware Projects Section
         <VStack spacing={6} align="start" mt={10}>
           <Heading as="h2" size="md" color="teal.200">
             Hardware Projects
@@ -92,8 +94,8 @@ function Building() {
           <Box p={5} shadow="md" borderWidth="1px" bg="gray.800">
             <Text fontSize="md" color="gray.300">Hardware Project 2: Description, img, link for another hardware project.</Text>
           </Box>
-          {/* Add more projects as needed */}
         </VStack>
+        */}
 
         {/* Links to Other Routes */}
         <Stack direction="row" spacing={4} justify="center" mt={10}>

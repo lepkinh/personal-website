@@ -64,7 +64,7 @@ function App() {
             <Box p={5} shadow="md" borderWidth="1px" width="400px">
               <Text fontSize="l" color="white">Hardware & Electronics</Text>
               <Text fontSize="l" textAlign="left" color="gray.500">
-                Analog & Digital Circuit Design, Basic Memory
+                Analog & Digital Circuit Design, Basic Memory, Embedded Programming & Microcontroller
               </Text>
               <Text fontSize="l" textAlign="left" color="gray.500">
                 Learning: PCB, Microcontroller, Sensor, Actuator
