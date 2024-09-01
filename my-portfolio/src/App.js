@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { FaLinkedin, FaGithub, FaTwitter } from 'react-icons/fa';
 import About from './About';
 import Building from './Building';
-import Cv from './Cv';
+import CV from './CV';
 
 // Darker theme
 const theme = extendTheme({
@@ -123,7 +123,7 @@ function Main() {
         <Route path="/" element={<App />} />
         <Route path="/about" element={<About />} />
         <Route path="/building" element={<Building />} />
-        {/* <Route path="/cv" element={<Cv />} /> */}
+        <Route path="/cv" element={<CV />} />
       </Routes>
     </Router>
   );

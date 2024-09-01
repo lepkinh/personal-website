@@ -1,6 +1,5 @@
 import React from 'react';
 import { AspectRatio, ChakraProvider, Container, Heading, Text, VStack, HStack, Box, extendTheme, Link, Stack, Icon, Image } from '@chakra-ui/react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { FaLinkedin, FaGithub, FaTwitter } from 'react-icons/fa';
 import charlie1 from './assets/charlie1.jpg';
 import charlie2 from './assets/charlie2.jpg';
@@ -69,7 +68,7 @@ function About() {
           <Link href="/" color="teal.200">Home</Link>
           <Link href="/about" color="teal.200">About</Link>
           <Link href="/building" color="teal.200">Code & Building</Link>
-          {/* <Route path="/cv" element={<Cv />} /> */}
+          <Link href="/cv" color="teal.200">CV</Link>
         </Stack>
 
         {/* Links to Socials */}

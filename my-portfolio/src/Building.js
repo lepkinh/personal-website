@@ -1,6 +1,5 @@
 import React from 'react';
 import { ChakraProvider, Container, Heading, Text, VStack, HStack, Box, extendTheme, Link, Stack, Icon, Image } from '@chakra-ui/react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { FaLinkedin, FaGithub, FaTwitter } from 'react-icons/fa';
 import prediction_2 from './assets/prediction_2.png';
 import prediction_5 from './assets/prediction_5.png';
@@ -101,7 +100,7 @@ function Building() {
           <Link href="/" color="teal.200">Home</Link>
           <Link href="/about" color="teal.200">About</Link>
           <Link href="/building" color="teal.200">Code & Building</Link>
-          {/* <Route path="/cv" element={<Cv />} /> */}
+          <Link href="/cv" color="teal.200">CV</Link>
         </Stack>
 
         {/* Links to Socials */}
