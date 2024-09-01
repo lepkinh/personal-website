@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { FaLinkedin, FaGithub, FaTwitter } from 'react-icons/fa';
 import About from './About';
 import Building from './Building';
-import CV from './CV';
+import CV from './Cv';
 
 // Darker theme
 const theme = extendTheme({

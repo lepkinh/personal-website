@@ -15,7 +15,7 @@ const theme = extendTheme({
   },
 });
 
-function CV() {
+function Cv() {
   return (
     <ChakraProvider theme={theme}>
       <Container maxW="container.md" py={10}>
@@ -77,4 +77,4 @@ function CV() {
   );
 }
 
-export default CV;
+export default Cv;
