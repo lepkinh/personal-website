@@ -5,13 +5,14 @@ import { BrowserRouter as Router } from 'react-router-dom';
 import App from './App';
 import theme from './theme';
 
-ReactDOM.render(
+const Root = () => (
   <React.StrictMode>
     <ChakraProvider theme={theme}>
       <Router>
         <App />
       </Router>
     </ChakraProvider>
-  </React.StrictMode>,
-  document.getElementById('root')
+  </React.StrictMode>
 );
+
+ReactDOM.render(<Root />, document.getElementById('root'));
