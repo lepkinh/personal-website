@@ -2,6 +2,7 @@ import React from 'react';
 import { ChakraProvider, Box, Container, Heading, Text, VStack, HStack, Image, Icon, Link, Stack, extendTheme } from '@chakra-ui/react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { FaLinkedin, FaGithub, FaTwitter } from 'react-icons/fa';
+import About from './About';
 import Building from './Building';
 import Cv from './Cv';
 
@@ -26,7 +27,7 @@ function App() {
           <HStack spacing={6} align="center">
             {/* Image Placeholder */}
             <Box boxSize="150px" bg="gray.200" borderRadius="full" overflow="hidden">
-              <Image src="https://media.discordapp.net/attachments/829085119960580170/1277674570333163582/IMG_7626.png?ex=66cf582b&is=66ce06ab&hm=01a74b07124f4a95a364efd45639184ffbd7460b0247d14343a1bbc73b2d0976&=&format=webp&quality=lossless&width=649&height=700" alt="hi" boxSize="150px" objectFit="cover" />
+              <Image src="https://media.discordapp.net/attachments/829085119960580170/1277674570333163582/IMG_7626.png?ex=66ce06ab&is=66ccb52b&hm=5b4940db2cd276c8c461fcb0bbb5882a03968418cb03e89008c8423d3230c635&=&format=webp&quality=lossless&width=649&height=700" alt="hi" boxSize="150px" objectFit="cover" />
             </Box>
 
             {/* Name and Description */}
@@ -69,6 +70,7 @@ function App() {
         {/* Links to Other Routes */}
         <Stack direction="row" spacing={4} justify="center" mt={4}>
           <Link href="/" color="teal.200">Home</Link>
+          <Link href="/about" color="teal.200">About</Link>
           <Link href="/building" color="teal.200">Code & Building</Link>
           <Link href="/cv" color="teal.200">CV</Link>
         </Stack>
@@ -95,6 +97,7 @@ function Main() {
     <Router>
       <Routes>
         <Route path="/" element={<App />} />
+        <Route path="/about" element={<About />} />
         <Route path="/building" element={<Building />} />
         <Route path="/cv" element={<Cv />} />
       </Routes>

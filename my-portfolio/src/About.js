@@ -1,10 +1,7 @@
 import React from 'react';
-import { ChakraProvider, Container, Heading, Text, VStack, HStack, Box, extendTheme, Link, Stack, Icon, Image } from '@chakra-ui/react';
+import { ChakraProvider, Container, Heading, Text, VStack, HStack, Box, extendTheme, Link, Stack, Icon } from '@chakra-ui/react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { FaLinkedin, FaGithub, FaTwitter } from 'react-icons/fa';
-import prediction_2 from './assets/prediction_2.png';
-import prediction_5 from './assets/prediction_5.png';
-import prediction_7 from './assets/prediction_7.png';
 
 // Darker theme
 const theme = extendTheme({
@@ -17,17 +14,29 @@ const theme = extendTheme({
     },
   },
 });
-
-function Building() {
+  
+function About() {
   return (
     <ChakraProvider theme={theme}>
       <Container maxW="container.md" py={10}>
         <VStack spacing={1} align="start">
           <Heading as="h1" size="md">
-            Code & Building
+            About This Site
           </Heading>
           <Text fontSize="md" color="gray.400">
-            Full-stack development, machine learning, and hardware projects.
+            This site was created to document my technical efforts and thoughts. It is built using React, Chakra UI, and Vercel. The code for this site is available on <a style="text-decoration:none" href="https://github.com/lepkinh/personal-website">this GitHub repo</a>.
+          </Text>
+        </VStack>   
+
+        <VStack spacing={1} align="start">
+          <Heading as="h1" size="md">
+            About Me
+          </Heading>
+          <Text fontSize="md" color="gray.400">
+            I am a computer engineering student at McMaster University, where I study circuits, embedded systems, electronics, software development, and mathematics. I apply these areas of study to the fields of robotics and artificial intelligence. I also develop software as a hobby. I am an ex-University of Waterloo student where I majored in mathematics before transferring.
+          </Text>
+          <Text>
+            I am looking for a project to do a full deep dive into, where I can grind and contribute as a part of a team.
           </Text>
         </VStack>
 
@@ -50,32 +59,9 @@ function Building() {
           <Heading as="h2" size="md" color="teal.200">
             Machine Learning Projects
           </Heading>
-
-          {/* AI Project 1 */}
           <Box p={5} shadow="md" borderWidth="1px" bg="gray.800">
-            <Heading as="h3" size="sm" color="teal.200">
-              User-Drawn Digit Recognizor Webapp (WIP)
-            </Heading>
-            <Text fontSize="md" color="gray.300" mb={4}>
-              This is a web app that uses machine learning to recognize handwritten digits by the user. I created this model using TensorFlow and NumPy, it has a ~98% accuracy. The app is built using React for the frontend and Flask for the backend. Below are some screenshots and a link to the GitHub repo. WIP next steps: changing model to predict alphanumeric characters, adding other pages, stylizing front end to look cute.
-            </Text>
-
-            {/* Screenshots */}
-            <HStack spacing={4} justify="center">
-              <Image src={prediction_2} alt="A handdrawn 2" boxSize="200px" borderRadius="md" />
-              <Image src={prediction_5} alt="A handdrawn 5" boxSize="200px" borderRadius="md" />
-              <Image src={prediction_7}  alt="A handdrawn 7" boxSize="200px" borderRadius="md" />
-            </HStack>
-
-            {/* GitHub Link */}
-            <Text fontSize="md" color="gray.400" mt={4}>
-              Check out the source code on my <Link href="https://github.com/lepkinh/digit-recognition-webapp/tree/new-approach" color="teal.200" isExternal>
-                GitHub repo
-              </Link>, cleaner code on release v1.1 under the 'Tags' section.
-              
-            </Text>
+            <Text fontSize="md" color="gray.300">ML Project 1: Description, img, link for the machine learning project.</Text>
           </Box>
-
           <Box p={5} shadow="md" borderWidth="1px" bg="gray.800">
             <Text fontSize="md" color="gray.300">ML Project 2: Description, img, link for another machine learning project.</Text>
           </Box>
@@ -97,8 +83,9 @@ function Building() {
         </VStack>
 
         {/* Links to Other Routes */}
-        <Stack direction="row" spacing={4} justify="center" mt={10}>
+        <Stack direction="row" spacing={4} justify="center" mt={4}>
           <Link href="/" color="teal.200">Home</Link>
+          <Link href="/about" color="teal.200">About</Link>
           <Link href="/building" color="teal.200">Code & Building</Link>
           <Link href="/cv" color="teal.200">CV</Link>
         </Stack>
@@ -120,4 +107,4 @@ function Building() {
   );
 }
 
-export default Building;
+export default About;
