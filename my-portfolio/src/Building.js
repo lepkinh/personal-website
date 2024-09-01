@@ -51,10 +51,10 @@ function Building() {
             Machine Learning Projects
           </Heading>
 
-          {/* AI Project 1 */}
+          {/* AI 1 */}
           <Box p={5} shadow="md" borderWidth="1px" bg="gray.800">
             <Heading as="h3" size="sm" color="teal.200">
-              User-Drawn Digit Recognizor Webapp (WIP)
+              User-Drawn Digit Recognizor Webapp (WIP, functional)
             </Heading>
             <Text fontSize="md" color="gray.300" mb={4}>
               This is a web app that uses machine learning to recognize handwritten digits by the user. I created this model using TensorFlow and NumPy, it has a ~98% accuracy. The app is built using React for the frontend and Flask for the backend. Below are some screenshots and a link to the GitHub repo. WIP next steps: changing model to predict alphanumeric characters, adding other pages, stylizing front end to look cute.
@@ -99,6 +99,7 @@ function Building() {
         {/* Links to Other Routes */}
         <Stack direction="row" spacing={4} justify="center" mt={10}>
           <Link href="/" color="teal.200">Home</Link>
+          <Link href="/about" color="teal.200">About</Link>
           <Link href="/building" color="teal.200">Code & Building</Link>
           <Link href="/cv" color="teal.200">CV</Link>
         </Stack>

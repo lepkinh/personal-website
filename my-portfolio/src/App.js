@@ -27,7 +27,7 @@ function App() {
           <HStack spacing={6} align="center">
             {/* Image Placeholder */}
             <Box boxSize="150px" bg="gray.200" borderRadius="full" overflow="hidden">
-              <Image src="https://media.discordapp.net/attachments/829085119960580170/1277674570333163582/IMG_7626.png?ex=66ce06ab&is=66ccb52b&hm=5b4940db2cd276c8c461fcb0bbb5882a03968418cb03e89008c8423d3230c635&=&format=webp&quality=lossless&width=649&height=700" alt="hi" boxSize="150px" objectFit="cover" />
+              <Image src="" alt="hi" boxSize="150px" objectFit="cover" />
             </Box>
 
             {/* Name and Description */}
@@ -45,7 +45,7 @@ function App() {
           <VStack spacing={2} align="start">
             <Text fontSize="l" color="white">About</Text>
             <Text fontSize="l" textAlign="left" color="gray.500">
-              I am a computer engineering student at McMaster University, where I study circuits, embedded systems, electronics, software development, and mathematics. I apply these areas of study to the fields of robotics and artificial intelligence. I also develop software as a hobby.
+              Student, techie, builder. I like coffee a lot.
             </Text>
           </VStack>
 
@@ -53,11 +53,12 @@ function App() {
           <HStack spacing={4} wrap="wrap" justify="center">
             <Box p={5} shadow="md" borderWidth="1px" maxW="800px">
               <Heading fontSize="xl">Programming</Heading>
-              <Text mt={4}>Python, C/C++, SQL Databases, JavaScript, HTML & CSS</Text>
+              <Text mt={4}>Python, C/C++, SQL, JavaScript, HTML & CSS</Text>
             </Box>
             <Box p={5} shadow="md" borderWidth="1px" maxW="800px">
               <Heading fontSize="xl">Hardware & Electronics</Heading>
-              <Text mt={4}>Microcontrollers, Analog & Digital Circuit Design, Sensors, Actuators</Text>
+              <Text mt={4}>PCB, Analog & Digital Circuit Design</Text>
+              <Text mt={1}>Learning: Microcontroller, Sensor, Actuator</Text>
             </Box>
             <Box p={5} shadow="md" borderWidth="1px" maxW="800px">
               <Heading fontSize="xl">Artificial Intelligence</Heading>
