@@ -5,7 +5,6 @@ import { FaLinkedin, FaGithub, FaTwitter } from 'react-icons/fa';
 import charlie1 from './assets/charlie1.jpg';
 import charlie2 from './assets/charlie2.jpg';
 import beautiful_world from './assets/beautiful_world.jpg';
-import cute_cat from './assets/cute_cat.mov';
 
 // Darker theme
 const theme = extendTheme({
@@ -29,7 +28,7 @@ function About() {
             About Me {/* (Serious) */}
           </Heading>
           <Text fontSize="md" color="gray.400">
-            Searching for a big project to deep dive into. I am an engineering student at McMaster University, currently studying circuits, embedded systems, electronics, software, and mathematics. Applying knowledge to build embodied AI. I also develop software as a hobby. I am an ex University of Waterloo student where I majored in mathematics before transferring.
+            I am actively searching for a large project to deep dive into. I am an engineering student at McMaster University, currently studying circuits, embedded systems, electronics, software, and mathematics. A greater goal of mine is applying acquired knowledge to build embodied AI. I also develop software as a hobby. I am an ex University of Waterloo student where I majored in mathematics before transferring.
           </Text>
         </VStack>
 
@@ -39,7 +38,7 @@ function About() {
             About This Site
           </Heading>
           <Text fontSize="md" color="gray.400">
-            This site was created to document my thoughts and technical efforts, it is very WIP. It is built using React and Chakra UI. The code for this site is available in this <a style={{ textDecoration: 'none' }} href="https://github.com/lepkinh/personal-website">repo</a>.
+            This site was created to document my thoughts and technical efforts, it is very WIP. It is built using React and Chakra UI. The code for this site is available <Link target="_blank" href="https://github.com/lepkinh/personal-website" color="teal.200">here</Link>.
           </Text>
         </VStack>   
 
@@ -70,7 +69,7 @@ function About() {
           <Link href="/" color="teal.200">Home</Link>
           <Link href="/about" color="teal.200">About</Link>
           <Link href="/building" color="teal.200">Code & Building</Link>
-          <Link href="/cv" color="teal.200">CV</Link>
+          {/* <Route path="/cv" element={<Cv />} /> */}
         </Stack>
 
         {/* Links to Socials */}

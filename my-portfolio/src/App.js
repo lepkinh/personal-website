@@ -23,13 +23,12 @@ function App() {
     <ChakraProvider theme={theme}>
       <Container maxW="container.md" py={10}>
         {/* About Me Section */}
-        <VStack spacing={6} align="start">
+        <VStack spacing={6} align="center">
           <HStack spacing={6} align="center">
             {/* Image Placeholder */}
             <Box boxSize="150px" bg="gray.200" borderRadius="full" overflow="hidden">
               <Image src="" alt="hi" boxSize="150px" objectFit="cover" />
             </Box>
-
             {/* Name and Description */}
             <VStack spacing={1} align="start">
               <Heading as="h1" size="md">
@@ -45,29 +44,53 @@ function App() {
           <VStack spacing={2} align="start">
             <Text fontSize="l" color="white">About</Text>
             <Text fontSize="l" textAlign="left" color="gray.500">
-              Student, techie, builder. I like coffee a lot.
+              Engineering, tech, building. Technical and sometimes creative.
             </Text>
           </VStack>
 
           {/* Skills Section */}
-          <HStack spacing={4} wrap="wrap" justify="center">
-            <Box p={5} shadow="md" borderWidth="1px" maxW="800px">
-              <Heading fontSize="xl">Programming</Heading>
-              <Text mt={4}>Python, C/C++, SQL, JavaScript, HTML & CSS</Text>
+          <VStack spacing={4}>
+            <Text fontSize="l" color="white">Technical Skills</Text>
+            
+            {/* Software/Programming */}
+            <Box p={5} shadow="md" borderWidth="1px" width="400px">
+              <Text fontSize="l" color="white">Software, General Programming</Text>
+              <Text fontSize="l" textAlign="left" color="gray.500">
+                Python, C/C++, SQL, JavaScript, HTML & CSS
+              </Text>
             </Box>
-            <Box p={5} shadow="md" borderWidth="1px" maxW="800px">
-              <Heading fontSize="xl">Hardware & Electronics</Heading>
-              <Text mt={4}>PCB, Analog & Digital Circuit Design</Text>
-              <Text mt={1}>Learning: Microcontroller, Sensor, Actuator</Text>
-            </Box>
-            <Box p={5} shadow="md" borderWidth="1px" maxW="800px">
-              <Heading fontSize="xl">Artificial Intelligence</Heading>
-              <Text mt={4}>Machine Learning Algorithms, Deep Learning</Text>
-              <Text mt={1}>TensorFlow, NumPy, PyTorch</Text>
-            </Box>
-          </HStack>
-        </VStack>
 
+            {/* Hardware/Electronics */}
+            <Box p={5} shadow="md" borderWidth="1px" width="400px">
+              <Text fontSize="l" color="white">Hardware & Electronics</Text>
+              <Text fontSize="l" textAlign="left" color="gray.500">
+                Analog & Digital Circuit Design, Basic Memory
+              </Text>
+              <Text fontSize="l" textAlign="left" color="gray.500">
+                Learning: PCB, Microcontroller, Sensor, Actuator
+              </Text>
+            </Box>
+
+            {/* Artificial Intelligence */}
+            <Box p={5} shadow="md" borderWidth="1px" width="400px">
+              <Text fontSize="l" color="white">Artificial Intelligence</Text>
+              <Text fontSize="l" textAlign="left" color="gray.500">
+                Machine Learning Algorithms, Deep Learning,
+              </Text>
+              <Text fontSize="l" textAlign="left" color="gray.500">
+                TensorFlow, NumPy, PyTorch
+              </Text>
+            </Box>
+
+            {/* Other */}
+            <Box p={5} shadow="md" borderWidth="1px" width="400px">
+              <Text fontSize="l" color="white">Other</Text>
+              <Text fontSize="l" textAlign="left" color="gray.500">
+                SolidWorks, MATLAB Git, ROS
+              </Text>
+            </Box>
+          </VStack>
+        </VStack>
         {/* Links to Other Routes */}
         <Stack direction="row" spacing={4} justify="center" mt={4}>
           <Link href="/" color="teal.200">Home</Link>
@@ -100,7 +123,7 @@ function Main() {
         <Route path="/" element={<App />} />
         <Route path="/about" element={<About />} />
         <Route path="/building" element={<Building />} />
-        <Route path="/cv" element={<Cv />} />
+        {/* <Route path="/cv" element={<Cv />} /> */}
       </Routes>
     </Router>
   );

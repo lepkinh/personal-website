@@ -15,7 +15,7 @@ const theme = extendTheme({
 });
 
 function Cv() {
-  const resumeUrl = "/path/to/your/resume.pdf"; // ADD RESUME HERE, I need to redo mine still
+  const resumeUrl = ""; // ADD RESUME HERE, I need to redo mine still
 
   return (
     <VStack spacing={8} py={10}>

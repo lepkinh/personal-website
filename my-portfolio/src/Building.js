@@ -101,7 +101,7 @@ function Building() {
           <Link href="/" color="teal.200">Home</Link>
           <Link href="/about" color="teal.200">About</Link>
           <Link href="/building" color="teal.200">Code & Building</Link>
-          <Link href="/cv" color="teal.200">CV</Link>
+          {/* <Route path="/cv" element={<Cv />} /> */}
         </Stack>
 
         {/* Links to Socials */}
