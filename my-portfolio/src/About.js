@@ -1,5 +1,5 @@
 import React from 'react';
-import { AspectRatio, ChakraProvider, Container, Heading, Text, VStack, HStack, Box, extendTheme, Link, Stack, Icon, Image } from '@chakra-ui/react';
+import { ChakraProvider, Container, Heading, Text, VStack, HStack, Box, extendTheme, Link, Stack, Icon, Image } from '@chakra-ui/react';
 import { FaLinkedin, FaGithub, FaTwitter } from 'react-icons/fa';
 import charlie1 from './assets/charlie1.jpg';
 import charlie2 from './assets/charlie2.jpg';
