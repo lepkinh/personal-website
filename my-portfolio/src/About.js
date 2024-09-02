@@ -58,7 +58,7 @@ function About() {
             About Me (Unserious)
           </Heading>
           <Text fontSize="md" color="gray.400">
-            I like to grind and immerse myself in stuff, I live when I'm in a flow state. I am a ex-amateur-mma-fighter, love animals and sometimes women, rank diamond in league of legends, produce techno music (trance, industrial) and have been featured in a Toronto club, caffeine connoisseur, read horror fiction.
+            
           </Text>
         </VStack>
         */}
