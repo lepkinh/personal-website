@@ -31,12 +31,53 @@ function Building() {
         </VStack>
 
         {/* Software Projects Section */}
+
+
         <VStack spacing={6} align="start" mt={10}>
           <Heading as="h2" size="lg" color="teal.200">
             Software Projects
           </Heading>
-          <Box p={5} shadow="md" borderWidth="1px" bg="gray.800">
-            <Text fontSize="lg" color="gray.300">Put sodoku solver here, also consider editing mock finance app and adding it into the second section</Text>
+
+          {/* Software 1 - Sodoku Solver */}
+          <Box p={5} shadow="lg" borderWidth="1px" bg="gray.800">
+            <Heading as="h3" size="md" color="teal.200">
+              Sodoku Solver in C++ Terminal
+            </Heading>
+            <Text fontSize="lg" color="gray.300" mb={4} margin={5}>
+              Desc.
+            </Text>
+
+            {/* Screenshots 
+            <HStack spacing={4} justify="center">
+              <Image src={prediction_2} alt="A handdrawn 2" width="3xs" borderRadius="md" />
+              <Image src={prediction_5} alt="A handdrawn 5" width="3xs" borderRadius="md" />
+              <Image src={prediction_7}  alt="A handdrawn 7" width="3xs" borderRadius="md" />
+            </HStack> */}
+
+            {/* GitHub Link 
+            <Text fontSize="lg" color="gray.400" mt={4} margin={5}>
+              Check out the source code on my <Link href="https://github.com/lepkinh/digit-recognition-webapp/tree/new-approach" color="teal.200" isExternal>
+                GitHub repo
+              </Link>, cleaner code on release v1.1 under the 'Tags' section.
+              
+            </Text> */}
+          </Box>
+
+          {/* Software 2 - 2D Physics Engine */}
+          <Box p={5} shadow="lg" borderWidth="1px" bg="gray.800">
+            <Heading as="h3" size="md" color="teal.200">
+              2D Physics Engine in C++ w/ SFML (WIP, not yet functional)
+            </Heading>
+            <Text fontSize="lg" color="gray.300" mb={4} margin={5}>
+              This is a 2D physics engine that simulates "particles" with mass and velocity. Properties are typically stored as 2D vectors (s, v, a, f) or as floats (r, m, ...). This project is not particularly novel but it is really challenging my OOP and low level programming skills and I am learning a lot through this process. Screenshots coming soon.
+            </Text>
+
+            {/* GitHub Link */}
+            <Text fontSize="lg" color="gray.300" mt={4} margin={5}>
+              Source code is <Link href="https://github.com/lepkinh/2D-physics-engine" color="teal.200" isExternal>
+                here
+              </Link>, but project is not working. Check again soon.
+            </Text>
           </Box>
           {/*
           <Box p={5} shadow="md" borderWidth="1px" bg="gray.800">
@@ -51,13 +92,16 @@ function Building() {
             Machine Learning Projects
           </Heading>
 
-          {/* AI 1 */}
+          {/* AI 1 - Digit Recognizer */}
           <Box p={5} shadow="lg" borderWidth="1px" bg="gray.800">
             <Heading as="h3" size="md" color="teal.200">
               User-Drawn Digit Recognizor Webapp (WIP, functional)
             </Heading>
             <Text fontSize="lg" color="gray.300" mb={4} margin={5}>
-              This is a web app that uses machine learning to recognize handwritten digits by the user. I created this model using TensorFlow and NumPy, it has a ~98% accuracy. The app is built using React for the frontend and Flask for the backend. Below are some screenshots and a link to the GitHub repo. WIP next steps: changing model to predict alphanumeric characters, adding other pages, stylizing front end to look cute.
+              This is a web app that uses machine learning to recognize handwritten digits by the user. The model is a computer vision neural network that I created and trained using TensorFlow and NumPy on the MNIST dataset, it has a ~98% accuracy. The app is built using React for the frontend and Flask for the backend. Below are some screenshots and a link to the GitHub repo.
+            </Text>
+            <Text fontSize="lg" color="gray.300" mb={4} margin={5}>
+              Next steps: changing model to predict alphanumeric characters, adding other pages, stylizing front end to look cute. Already made a new model trained on EMNIST and some synthetic data, this will be used to convert handwriting to text. Exciting!
             </Text>
 
             {/* Screenshots */}

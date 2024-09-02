@@ -63,7 +63,7 @@ function App() {
             <Box p={5} shadow="md" borderWidth="1px" width="lg">
               <Text fontSize="lg" color="white">Software, General Programming</Text>
               <Text fontSize="lg" textAlign="left" color="gray.500">
-                Python, C/C++, CMake, SQL, JavaScript, HTML & CSS
+                Python, C/C++, SQL, JavaScript, HTML & CSS, Learning: CMake
               </Text>
             </Box>
 

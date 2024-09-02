@@ -3,7 +3,6 @@ import { ChakraProvider, Box, Container, Heading, Text, Button, VStack, Link, ex
 import { FaDownload } from 'react-icons/fa';
 import { FaLinkedin, FaGithub, FaTwitter } from 'react-icons/fa';
 /* import resume from './assets/resume_nicolaslepki_1sep24.pdf'; */
-import resume from './assets/test_resume.pdf';
 
 // Darker theme
 const theme = extendTheme({
@@ -33,7 +32,7 @@ function Cv() {
           {/* PDF Embed Section */}
           <Box p={5} shadow="md" borderWidth="1px" bg="gray.800" width="100%" height="2xl" overflow="hidden">
             <iframe 
-              src={resume}
+              src="" /* replace with src={resume} , when import my actual resume */
               title="CV PDF" 
               width="100%" 
               height="100%" 
@@ -70,9 +69,11 @@ function Cv() {
           <Link href="https://github.com/lepkinh" isExternal>
             <Icon as={FaGithub} boxSize={8} color="teal.200" />
           </Link>
-          <Link href="https://x.com/fixedawakening" isExternal>
+          {/*
+          <Link href="" isExternal>
             <Icon as={FaTwitter} boxSize={8} color="teal.200" />
           </Link>
+          */}
         </HStack>
       </Container>
     </ChakraProvider>
