@@ -44,11 +44,11 @@ function About() {
         {/* Fun Media Section */}
         <Box p={5} shadow="md" borderWidth="1px" bg="gray.800" marginTop={6}>
           <HStack spacing={4} justify="center">
-            <Image src={charlie1} alt="Charlie the dog 1" maxW="200px" borderRadius="md" />
-            <Image src={charlie2} alt="Charlie the dog 2" maxW="200px" borderRadius="md" />
-            <Image src={beautiful_world}  alt="Beautiful amazing world" maxW="200px" borderRadius="md" />
+            <Image src={charlie1} alt="Charlie the dog 1" width="3xs" borderRadius="md" />
+            <Image src={charlie2} alt="Charlie the dog 2" width="3xs" borderRadius="md" />
+            <Image src={beautiful_world}  alt="Beautiful amazing world" width="3xs" borderRadius="md" />
           </HStack>
-          <Text fontSize="md" color="gray.300" align="center" marginTop={4}>enjoyable media</Text>
+          <Text fontSize="md" color="gray.300" align="center" marginTop={4}>Charlie the dog</Text>
         </Box>
         
         {/* About Me (unserious) Section */}
@@ -79,9 +79,11 @@ function About() {
           <Link href="https://github.com/lepkinh" isExternal>
             <Icon as={FaGithub} boxSize={8} color="teal.200" />
           </Link>
-          <Link href="https://x.com/fixedawakening" isExternal>
+          {/*
+          <Link href="" isExternal>
             <Icon as={FaTwitter} boxSize={8} color="teal.200" />
           </Link>
+          */}
         </HStack>
       </Container>
     </ChakraProvider>

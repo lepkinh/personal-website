@@ -2,6 +2,7 @@ import React from 'react';
 import { ChakraProvider, Box, Container, Heading, Text, VStack, HStack, Image, Icon, Link, Stack, extendTheme } from '@chakra-ui/react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { FaLinkedin, FaGithub, FaTwitter } from 'react-icons/fa';
+import Guh from './assets/Guh.png';
 import About from './About';
 import Building from './Building';
 import CV from './Cv';
@@ -22,19 +23,24 @@ function App() {
   return (
     <ChakraProvider theme={theme}>
       <Container maxW="container.md" py={10}>
-        {/* About Me Section */}
+        {/* About Me section */}
         <VStack spacing={6} align="center">
           <HStack spacing={6} align="center">
-            {/* Image Placeholder */}
-            <Box boxSize="150px" bg="gray.200" borderRadius="full" overflow="hidden">
-              <Image src="" alt="hi" boxSize="150px" objectFit="cover" />
-            </Box>
-            {/* Name and Description */}
+            {/* Image placeholder */}
+            <VStack spacing={2} align="center">
+              <Box boxSize="200" bg="gray.200" borderRadius="full" overflow="hidden">
+                <Image src= {Guh} alt="hi" boxSize="200" objectFit="cover" />
+              </Box>
+              <Text fontSize="sm" color="gray.600">
+                (Placeholder image, not actually me)
+              </Text>
+            </VStack>s
+            {/* Name and desc */}
             <VStack spacing={1} align="start">
-              <Heading as="h1" size="md">
+              <Heading as="h1" size="lg">
                 Nicolas Lepki
               </Heading>
-              <Text fontSize="md" color="gray.600">
+              <Text fontSize="lg" color="gray.600">
                 software · hardware · ai · robotics
               </Text>
             </VStack>
@@ -42,51 +48,52 @@ function App() {
 
           {/* About Me Text */}
           <VStack spacing={2} align="start">
-            <Text fontSize="l" color="white">About</Text>
-            <Text fontSize="l" textAlign="left" color="gray.500">
-              Engineering, tech, building. Technical and sometimes creative.
+            <Text fontSize="lg" color="white">About</Text>
+            <Text fontSize="lg" textAlign="left" color="gray.500">
+              Related to engineering, tech, building. Functional thoughts and portfolio.
             </Text>
+            
           </VStack>
 
           {/* Skills Section */}
           <VStack spacing={4}>
-            <Text fontSize="l" color="white">Technical Skills</Text>
+            <Text fontSize="lg" color="white">Technical Skills</Text>
             
             {/* Software/Programming */}
-            <Box p={5} shadow="md" borderWidth="1px" width="400px">
-              <Text fontSize="l" color="white">Software, General Programming</Text>
-              <Text fontSize="l" textAlign="left" color="gray.500">
-                Python, C/C++, SQL, JavaScript, HTML & CSS
+            <Box p={5} shadow="md" borderWidth="1px" width="lg">
+              <Text fontSize="lg" color="white">Software, General Programming</Text>
+              <Text fontSize="lg" textAlign="left" color="gray.500">
+                Python, C/C++, CMake, SQL, JavaScript, HTML & CSS
               </Text>
             </Box>
 
             {/* Hardware/Electronics */}
-            <Box p={5} shadow="md" borderWidth="1px" width="400px">
-              <Text fontSize="l" color="white">Hardware & Electronics</Text>
-              <Text fontSize="l" textAlign="left" color="gray.500">
+            <Box p={5} shadow="md" borderWidth="1px" width="lg">
+              <Text fontSize="lg" color="white">Hardware & Electronics</Text>
+              <Text fontSize="lg" textAlign="left" color="gray.500">
                 Analog & Digital Circuit Design, Basic Memory, Embedded Programming & Microcontroller
               </Text>
-              <Text fontSize="l" textAlign="left" color="gray.500">
+              <Text fontSize="lg" textAlign="left" color="gray.500">
                 Learning: PCB, Microcontroller, Sensor, Actuator
               </Text>
             </Box>
 
             {/* Artificial Intelligence */}
-            <Box p={5} shadow="md" borderWidth="1px" width="400px">
-              <Text fontSize="l" color="white">Artificial Intelligence</Text>
-              <Text fontSize="l" textAlign="left" color="gray.500">
+            <Box p={5} shadow="md" borderWidth="1px" width="lg">
+              <Text fontSize="lg" color="white">Artificial Intelligence</Text>
+              <Text fontSize="lg" textAlign="left" color="gray.500">
                 Machine Learning Algorithms, Deep Learning,
               </Text>
-              <Text fontSize="l" textAlign="left" color="gray.500">
+              <Text fontSize="lg" textAlign="left" color="gray.500">
                 TensorFlow, NumPy, PyTorch
               </Text>
             </Box>
 
             {/* Other */}
-            <Box p={5} shadow="md" borderWidth="1px" width="400px">
-              <Text fontSize="l" color="white">Other</Text>
-              <Text fontSize="l" textAlign="left" color="gray.500">
-                SolidWorks, MATLAB Git, ROS
+            <Box p={5} shadow="md" borderWidth="1px" width="md">
+              <Text fontSize="lg" color="white">Other</Text>
+              <Text fontSize="lg" textAlign="left" color="gray.500">
+                SolidWorks, MATLAB, Git, ROS
               </Text>
             </Box>
           </VStack>
@@ -107,11 +114,13 @@ function App() {
           <Link href="https://github.com/lepkinh" isExternal>
             <Icon as={FaGithub} boxSize={8} color="teal.200" />
           </Link>
-          <Link href="https://x.com/fixedawakening" isExternal>
+          {/*
+          <Link href="" isExternal>
             <Icon as={FaTwitter} boxSize={8} color="teal.200" />
           </Link>
+          */}
         </HStack>
-      </Container>\
+      </Container>
     </ChakraProvider>
   );
 }

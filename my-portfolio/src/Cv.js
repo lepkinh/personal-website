@@ -2,6 +2,8 @@ import React from 'react';
 import { ChakraProvider, Box, Container, Heading, Text, Button, VStack, Link, extendTheme, Stack, Icon, HStack } from '@chakra-ui/react';
 import { FaDownload } from 'react-icons/fa';
 import { FaLinkedin, FaGithub, FaTwitter } from 'react-icons/fa';
+/* import resume from './assets/resume_nicolaslepki_1sep24.pdf'; */
+import resume from './assets/test_resume.pdf';
 
 // Darker theme
 const theme = extendTheme({
@@ -22,16 +24,16 @@ function Cv() {
         {/* Text Section */}
         <VStack spacing={6} align="center">
           <Heading as="h1" size="lg">
-            My CV
+            
           </Heading>
           <Text fontSize="md" color="gray.400" textAlign="center">
-            Below is a copy of my CV. Feel free to review it here, and you can download it using the button at the bottom of the page.
+            Below is a copy of my CV. Button to download is below the PDF.
           </Text>
 
           {/* PDF Embed Section */}
-          <Box p={5} shadow="md" borderWidth="1px" bg="gray.800" width="100%" height="600px" overflow="hidden">
+          <Box p={5} shadow="md" borderWidth="1px" bg="gray.800" width="100%" height="2xl" overflow="hidden">
             <iframe 
-              src="/path-to-your-cv.pdf" 
+              src={resume}
               title="CV PDF" 
               width="100%" 
               height="100%" 
