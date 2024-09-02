@@ -52,7 +52,7 @@ function About() {
         </Box>
         
         {/* About Me (unserious) Section */}
-        {/* :p
+        {/*
         <VStack spacing={1} align="start">
           <Heading as="h1" size="md">
             About Me (Unserious)
