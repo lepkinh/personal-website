@@ -106,9 +106,7 @@ function Building() {
 
             {/* Screenshots */}
             <HStack spacing={4} justify="center">
-              <Image src={prediction_2} alt="A handdrawn 2" width="3xs" borderRadius="md" />
-              <Image src={prediction_5} alt="A handdrawn 5" width="3xs" borderRadius="md" />
-              <Image src={prediction_7}  alt="A handdrawn 7" width="3xs" borderRadius="md" />
+              <Image src={prediction_5} alt="A handdrawn 5" width="13em" borderRadius="md" />
             </HStack>
 
             {/* GitHub Link */}

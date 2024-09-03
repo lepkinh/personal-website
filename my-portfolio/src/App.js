@@ -56,11 +56,21 @@ function App() {
           </VStack>
 
           {/* Skills Section */}
-          <VStack spacing={4}>
-            <Text fontSize="lg" color="white">Technical Skills</Text>
+          <VStack spacing={4} align="start">
+            <Text fontSize="lg" color="white" align="center">Technical Skills</Text>
+
+            {/* Software/Programming */}
+            <Text fontSize="lg" color="white" align="start">Software, General Programming</Text>
+            <Text fontSize="lg" textAlign="left" color="gray.500">
+              Python, C/C++, SQL, JavaScript, HTML & CSS, Learning: CMake
+            </Text>
             
             {/* Software/Programming */}
-            <Box p={5} shadow="md" borderWidth="1px" width="lg">
+            <Text fontSize="lg" color="white">Software, General Programming</Text>
+              <Text fontSize="lg" textAlign="left" color="gray.500">
+                Python, C/C++, SQL, JavaScript, HTML & CSS, Learning: CMake
+              </Text>
+            <Box p={5} shadow="lg" borderWidth="1px">
               <Text fontSize="lg" color="white">Software, General Programming</Text>
               <Text fontSize="lg" textAlign="left" color="gray.500">
                 Python, C/C++, SQL, JavaScript, HTML & CSS, Learning: CMake
@@ -68,8 +78,8 @@ function App() {
             </Box>
 
             {/* Hardware/Electronics */}
-            <Box p={5} shadow="md" borderWidth="1px" width="lg">
-              <Text fontSize="lg" color="white">Hardware & Electronics</Text>
+            <Box p={5} shadow="lg" borderWidth="1px">
+              <Text fontSize="lg" color="whitse">Hardware & Electronics</Text>
               <Text fontSize="lg" textAlign="left" color="gray.500">
                 Analog & Digital Circuit Design, Basic Memory, Embedded Programming & Microcontroller
               </Text>
@@ -79,7 +89,7 @@ function App() {
             </Box>
 
             {/* Artificial Intelligence */}
-            <Box p={5} shadow="md" borderWidth="1px" width="lg">
+            <Box p={5} shadow="lg" borderWidth="1px">
               <Text fontSize="lg" color="white">Artificial Intelligence</Text>
               <Text fontSize="lg" textAlign="left" color="gray.500">
                 Machine Learning Algorithms, Deep Learning,
@@ -90,7 +100,7 @@ function App() {
             </Box>
 
             {/* Other */}
-            <Box p={5} shadow="md" borderWidth="1px" width="md">
+            <Box p={5} shadow="lg" borderWidth="1px">
               <Text fontSize="lg" color="white">Other</Text>
               <Text fontSize="lg" textAlign="left" color="gray.500">
                 SolidWorks, MATLAB, Git, ROS
