@@ -74,7 +74,7 @@ function App() {
               Related to engineering, tech, building. Functional thoughts and portfolio.
             </Text>
             <Text fontSize="md" color="gray.500" align="start">
-              I am collecting data, please test out my <Link href="/" color="teal.200">computer vision project</Link>.
+              I am collecting data, please test out my <Link href="/computervision" color="teal.200">computer vision project</Link>.
             </Text>
           </VStack>
 
