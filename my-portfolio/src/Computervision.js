@@ -185,8 +185,13 @@ function About() {
             </Box>
 
             {/* Buttons */}
-            <Box><button onClick={handlePredictClick}>Predict</button></Box>
-            <Box><button onClick={handleClearClick}>Clear</button></Box>
+            <VStack align={"center"} mt={5}>
+                <Box><button onClick={handlePredictClick}>Predict</button></Box>
+                <Box><button onClick={handleClearClick}>Clear</button></Box>
+            </VStack>
+            
+            {/* Display the prediction result */}
+            {prediction !== null && <p>Model's prediction: {prediction}</p>}
         </Container>
         
         {/* Links to Other Routes */}
