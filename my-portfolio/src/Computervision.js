@@ -1,7 +1,6 @@
 import React, { useRef, useState } from 'react';
 import { ChakraProvider, Container, Flex, Heading, Text, VStack, HStack, Box, extendTheme, Link, Stack, Icon, Image } from '@chakra-ui/react';
 import { FaLinkedin, FaGithub, FaTwitter } from 'react-icons/fa';
-import charlie2 from './assets/charlie2.jpg';
 import Guh from './assets/Guh.png';
 
 // Darker theme
@@ -162,12 +161,33 @@ function About() {
             See more regarding this project <Link href="/building" color="teal.200">here</Link>.
           </Text>
         </VStack>
-
-        {/* Canvas */}
         
+        <Container align="center" mt={10}>
 
-        {/* Buttons */}
+            {/* Canvas */}
+            <Text fontSize="md" color="gray.400" mt={2}>
+                Canvas
+            </Text>
+            <Box>
+                <div classname="sCanvas">
+                    {/* Canvas for drawing */}
+                    <canvas
+                        ref={canvasRef}
+                        width={280}
+                        height={280}
+                        style={{ border: "1px solid black" }}
+                        onMouseDown={startDrawing}
+                        onMouseMove={draw}
+                        onMouseUp={stopDrawing}
+                        onMouseLeave={stopDrawing}
+                    ></canvas>
+                </div>
+            </Box>
 
+            {/* Buttons */}
+            <Box><button onClick={handlePredictClick}>Predict</button></Box>
+            <Box><button onClick={handleClearClick}>Clear</button></Box>
+        </Container>
         
         {/* Links to Other Routes */}
         <Stack direction="row" spacing={4} justify="center" mt={10}>
