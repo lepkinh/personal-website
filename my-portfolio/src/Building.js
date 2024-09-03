@@ -101,7 +101,7 @@ function Building() {
             <Text fontSize="lg" color="gray.300" mt={4} margin={5}>
               Source code is <Link href="https://github.com/lepkinh/2D-physics-engine" color="teal.200" isExternal>
                 here
-              </Link>, but project is not working. Check again soon.
+              </Link>, but project is still under heavy construction. Check again soon for progress!
             </Text>
           </Box>
           {/*
