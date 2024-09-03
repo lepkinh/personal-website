@@ -1,8 +1,9 @@
 import React from 'react';
-import { ChakraProvider, Box, Container, Heading, Text, Button, VStack, Link, extendTheme, Stack, Icon, HStack } from '@chakra-ui/react';
+import { ChakraProvider, Box, Container, Flex, Image, Heading, Text, Button, VStack, Link, extendTheme, Stack, Icon, HStack } from '@chakra-ui/react';
 import { FaDownload } from 'react-icons/fa';
 import { FaLinkedin, FaGithub, FaTwitter } from 'react-icons/fa';
 /* import resume from './assets/resume_nicolaslepki_1sep24.pdf'; */
+import Guh from './assets/Guh.png';
 
 // Darker theme
 const theme = extendTheme({
@@ -20,6 +21,33 @@ function Cv() {
   return (
     <ChakraProvider theme={theme}>
       <Container maxW="container.md" py={10}>
+
+        {/* Header */}
+        <Flex justifyContent="space-between" alignItems="center" mb={10}>
+          <HStack spacing={4}>
+            
+            <a href="/"><Box borderRadius="full" overflow="hidden"><Image src={Guh} alt="Guh" boxSize={50} objectFit="cover"/></Box></a>
+
+            <Link href="/" color="teal.200" fontSize="xl">
+              Home
+            </Link>
+          </HStack>
+          <HStack spacing={6}>
+            <Link href="/about" color="teal.200">
+              About
+            </Link>
+            <Link href="/building" color="teal.200">
+              Building
+            </Link>
+            <Link href="/cv" color="teal.200">
+              CV
+            </Link>
+            <Link href="/" color="teal.200">
+              Digit Recognition
+            </Link>
+          </HStack>
+        </Flex>
+
         {/* Text Section */}
         <VStack spacing={6} align="center">
           <Heading as="h1" size="lg">
@@ -59,6 +87,9 @@ function Cv() {
           <Link href="/about" color="teal.200">About</Link>
           <Link href="/building" color="teal.200">Code & Building</Link>
           <Link href="/cv" color="teal.200">CV</Link>
+          <Link href="/" color="teal.200">
+            Digit Recognition
+          </Link>
         </Stack>
 
         {/* Links to Socials */}
