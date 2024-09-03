@@ -25,6 +25,7 @@ build/
 # Virtual env vars
 venv/
 env/
+.env
 
 # Logs
 *.log
