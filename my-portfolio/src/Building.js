@@ -1,9 +1,8 @@
 import React from 'react';
-import { ChakraProvider, Container, Heading, Text, VStack, HStack, Box, extendTheme, Link, Stack, Icon, Image } from '@chakra-ui/react';
+import { ChakraProvider, Container, Flex, Heading, Text, VStack, HStack, Box, extendTheme, Link, Stack, Icon, Image } from '@chakra-ui/react';
 import { FaLinkedin, FaGithub, FaTwitter } from 'react-icons/fa';
-import prediction_2 from './assets/prediction_2.png';
 import prediction_5 from './assets/prediction_5.png';
-import prediction_7 from './assets/prediction_7.png';
+import Guh from './assets/Guh.png';
 
 // Darker theme
 const theme = extendTheme({
@@ -21,6 +20,34 @@ function Building() {
   return (
     <ChakraProvider theme={theme}>
       <Container maxW="container.md" py={10}>
+
+        {/* Header */}
+        <Flex justifyContent="space-between" alignItems="center" mb={10}>
+          <HStack spacing={4}>
+            
+            <a href="/"><Box borderRadius="full" overflow="hidden"><Image src={Guh} alt="Guh" boxSize={50} objectFit="cover"/></Box></a>
+
+            <Link href="/" color="teal.200" fontSize="xl">
+              Home
+            </Link>
+          </HStack>
+          <HStack spacing={6}>
+            <Link href="/about" color="teal.200">
+              About
+            </Link>
+            <Link href="/building" color="teal.200">
+              Building
+            </Link>
+            <Link href="/cv" color="teal.200">
+              CV
+            </Link>
+            <Link href="/" color="teal.200">
+              Digit Recognition
+            </Link>
+          </HStack>
+        </Flex>
+
+        {/* Title */}
         <VStack spacing={1} align="start">
           <Heading as="h1" size="lg">
             Code & Building
