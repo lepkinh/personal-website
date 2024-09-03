@@ -37,7 +37,7 @@ const theme = extendTheme({
 function App() {
   return (
     <ChakraProvider theme={theme}>
-      <Container maxW="container.lg" py={10}>
+      <Container maxW="container.md" py={10}>
         {/* Header */}
         <Flex justifyContent="space-between" alignItems="center" mb={10}>
           <HStack spacing={4}>
@@ -86,7 +86,7 @@ function App() {
               {/* Image */}
               <Box borderRadius="full" overflow="" mt="3" mb="3"><Image src="https://media.istockphoto.com/id/1315335712/photo/dog-using-computer-in-nerd-glasses-laptop-keyboard.jpg?s=612x612&w=0&k=20&c=zJBVnTlIARSBfAx-HxfoRLvXsdT6ZWnpSHBpG6s8Hys=" alt="Guh" boxSize={200} objectFit="cover"/></Box>
 
-              <Heading as="h2" size="sm" color="gray.400">
+              <Heading as="h2" size="sm" color="teal.200">
                 Software/Programming
               </Heading>
               <Text fontSize="md" color="gray.500">
@@ -95,7 +95,7 @@ function App() {
             </Box>
 
             <Box>
-              <Heading as="h2" size="sm" color="gray.400">
+              <Heading as="h2" size="sm" color="teal.200">
                 Hardware & Electronics
               </Heading>
               <Text fontSize="md" color="gray.500">
@@ -107,7 +107,7 @@ function App() {
             </Box>
 
             <Box>
-              <Heading as="h2" size="sm" color="gray.400">
+              <Heading as="h2" size="sm" color="teal.200">
                 AI
               </Heading>
               <Text fontSize="md" color="gray.500">
@@ -116,7 +116,7 @@ function App() {
             </Box>
 
             <Box>
-              <Heading as="h2" size="sm" color="gray.300">
+              <Heading as="h2" size="sm" color="teal.200">
                 Other
               </Heading>
               <Text fontSize="md" color="gray.500">
