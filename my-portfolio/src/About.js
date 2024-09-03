@@ -1,9 +1,8 @@
 import React from 'react';
-import { ChakraProvider, Container, Heading, Text, VStack, HStack, Box, extendTheme, Link, Stack, Icon, Image } from '@chakra-ui/react';
+import { ChakraProvider, Container, Flex, Heading, Text, VStack, HStack, Box, extendTheme, Link, Stack, Icon, Image } from '@chakra-ui/react';
 import { FaLinkedin, FaGithub, FaTwitter } from 'react-icons/fa';
-import charlie1 from './assets/charlie1.jpg';
 import charlie2 from './assets/charlie2.jpg';
-import beautiful_world from './assets/beautiful_world.jpg';
+import Guh from './assets/Guh.png';
 
 // Darker theme
 const theme = extendTheme({
@@ -21,9 +20,36 @@ function About() {
   return (
     <ChakraProvider theme={theme}>
       <Container maxW="container.md" py={10}>
+        {/* Header */}
+        <Flex justifyContent="space-between" alignItems="center" mb={10}>
+          <HStack spacing={4}>
+            
+            <a href="/"><Box borderRadius="full" overflow="hidden"><Image src={Guh} alt="Guh" boxSize={50} objectFit="cover"/></Box></a>
+
+            <Link href="/" color="teal.200" fontSize="xl">
+              Home
+            </Link>
+          </HStack>
+          <HStack spacing={6}>
+            <Link href="/about" color="teal.200">
+              About
+            </Link>
+            <Link href="/building" color="teal.200">
+              Building
+            </Link>
+            <Link href="/cv" color="teal.200">
+              CV
+            </Link>
+            <Link href="/" color="teal.200">
+              Digit Recognition
+            </Link>
+          </HStack>
+        </Flex>
+
+
         {/* About Me (serious) Section */}
         <VStack spacing={1} align="start">
-          <Heading as="h1" size="md">
+          <Heading as="h1" size="md" color="teal.200">
             About Me {/* (Serious) */}
           </Heading>
           <Text fontSize="md" color="gray.400">
@@ -33,7 +59,7 @@ function About() {
 
         {/* About This Site Section */}
         <VStack spacing={1} align="start">
-          <Heading as="h1" size="md" marginTop={6}>
+          <Heading as="h1" size="md" color="teal.200" marginTop={6}>
             About This Site
           </Heading>
           <Text fontSize="md" color="gray.400">
@@ -41,14 +67,12 @@ function About() {
           </Text>
         </VStack>   
 
-        {/* Fun Media Section */}
+        {/* Media */}
         <Box p={5} shadow="md" borderWidth="1px" bg="gray.800" marginTop={6}>
           <HStack spacing={4} justify="center">
-            <Image src={charlie1} alt="Charlie the dog 1" width="3xs" borderRadius="md" />
             <Image src={charlie2} alt="Charlie the dog 2" width="3xs" borderRadius="md" />
-            <Image src={beautiful_world}  alt="Beautiful amazing world" width="3xs" borderRadius="md" />
           </HStack>
-          <Text fontSize="md" color="gray.300" align="center" marginTop={4}>Charlie the dog</Text>
+          <Text fontSize="md" color="gray.300" align="center" marginTop={4}>Charlie</Text>
         </Box>
         
         {/* About Me (unserious) Section */}
@@ -69,6 +93,9 @@ function About() {
           <Link href="/about" color="teal.200">About</Link>
           <Link href="/building" color="teal.200">Code & Building</Link>
           <Link href="/cv" color="teal.200">CV</Link>
+          <Link href="/" color="teal.200">
+            Digit Recognition
+          </Link>
         </Stack>
 
         {/* Links to Socials */}
