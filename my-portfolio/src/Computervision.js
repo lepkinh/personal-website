@@ -1,8 +1,7 @@
 import React from 'react';
-import { ChakraProvider, Box, Container, Flex, Image, Heading, Text, Button, VStack, Link, extendTheme, Stack, Icon, HStack } from '@chakra-ui/react';
-import { FaDownload } from 'react-icons/fa';
+import { ChakraProvider, Container, Flex, Heading, Text, VStack, HStack, Box, extendTheme, Link, Stack, Icon, Image } from '@chakra-ui/react';
 import { FaLinkedin, FaGithub, FaTwitter } from 'react-icons/fa';
-/* import resume from './assets/resume_nicolaslepki_1sep24.pdf'; */
+import charlie2 from './assets/charlie2.jpg';
 import Guh from './assets/Guh.png';
 
 // Darker theme
@@ -16,12 +15,11 @@ const theme = extendTheme({
     },
   },
 });
-
-function Cv() {
+  
+function About() {
   return (
     <ChakraProvider theme={theme}>
       <Container maxW="container.md" py={10}>
-
         {/* Header */}
         <Flex justifyContent="space-between" alignItems="center" mb={10}>
           <HStack spacing={4}>
@@ -31,7 +29,6 @@ function Cv() {
             <Link href="/" color="teal.200" fontSize="xl">
               Home
             </Link>
-
           </HStack>
           <HStack spacing={6}>
             <Link color="gray.900"></Link> {/* Spacer for mobile view */}
@@ -50,39 +47,23 @@ function Cv() {
           </HStack>
         </Flex>
 
-        {/* Text Section */}
-        <VStack spacing={6} align="center">
-          <Heading as="h1" size="lg">
+
+        {/* Text */}
+        <VStack spacing={1} align="start">
+          <Heading as="h1" size="md" color="teal.200" mt={6}>
             
           </Heading>
-          <Text fontSize="md" color="gray.400" textAlign="center">
-            Below is a copy of my CV. Button to download is below the PDF.
+          <Text fontSize="md" color="gray.400" mt={2}>
+            
           </Text>
-
-          {/* PDF Embed Section */}
-          <Box p={5} shadow="md" borderWidth="1px" bg="gray.800" width="100%" height="2xl" overflow="hidden">
-            <iframe 
-              src="" /* replace with src={resume} , when import my actual resume */
-              title="CV PDF" 
-              width="100%" 
-              height="100%" 
-              style={{ border: 'none' }}
-            />
-          </Box>
-
-          {/* Download Button */}
-          <Button
-            leftIcon={<FaDownload />}
-            colorScheme="teal"
-            variant="solid"
-            as={Link}
-            href="/path-to-your-cv.pdf"
-            download="Your_Name_CV.pdf"
-          >
-            Download CV
-          </Button>
         </VStack>
 
+        {/* Canvas */}
+        
+
+        {/* Buttons */}
+
+        
         {/* Links to Other Routes */}
         <Stack direction="row" spacing={4} justify="center" mt={10}>
           <Link href="/" color="teal.200">Home</Link>
@@ -113,4 +94,4 @@ function Cv() {
   );
 }
 
-export default Cv;
+export default About;

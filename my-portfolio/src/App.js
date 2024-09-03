@@ -20,6 +20,7 @@ import Guh from './assets/Guh.png';
 import About from './About';
 import Building from './Building';
 import CV from './Cv';
+import Computervision from './Computervision';
 
 // Darker theme
 const theme = extendTheme({
@@ -58,7 +59,7 @@ function App() {
             <Link href="/cv" color="teal.200">
               CV
             </Link>
-            <Link href="/" color="teal.200">
+            <Link href="/computervision" color="teal.200">
               Digit Recognition
             </Link>
           </HStack>
@@ -139,7 +140,7 @@ function App() {
           <Link href="/cv" color="teal.200">
             CV
           </Link>
-          <Link href="/" color="teal.200">
+          <Link href="/computervision" color="teal.200">
             Digit Recognition
           </Link>
         </Stack>
@@ -164,6 +165,7 @@ function Main() {
         <Route path="/about" element={<About />} />
         <Route path="/building" element={<Building />} />
         <Route path="/cv" element={<CV />} />
+        <Route path="/computervision" element={<Computervision />} />
       </Routes>
     </Router>
   );

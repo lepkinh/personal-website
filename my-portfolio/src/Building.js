@@ -42,7 +42,7 @@ function Building() {
             <Link href="/cv" color="teal.200">
               CV
             </Link>
-            <Link href="/" color="teal.200">
+            <Link href="/computervision" color="teal.200">
               Digit Recognition
             </Link>
           </HStack>
@@ -123,7 +123,7 @@ function Building() {
               User-Drawn Digit Recognizor Webapp (WIP, functional)
             </Heading>
             <Text fontSize="lg" color="gray.300" mb={4} margin={5}>
-              Live <Link href="/digit-recognition" color="teal.200">here</Link>.
+              Live <Link href="/computervision" color="teal.200">here</Link>.
             </Text>
             <Text fontSize="lg" color="gray.300" mb={4} margin={5}>
               This is a web app that uses machine learning to recognize handwritten digits by the user. The model is a computer vision neural network that I created and trained using TensorFlow and NumPy on the MNIST dataset, it has a ~98% accuracy. The app is built using React for the frontend and Flask for the backend. Below are some screenshots and a link to the GitHub repo.
@@ -173,7 +173,7 @@ function Building() {
           <Link href="/about" color="teal.200">About</Link>
           <Link href="/building" color="teal.200">Projects</Link>
           <Link href="/cv" color="teal.200">CV</Link>
-          <Link href="/" color="teal.200">
+          <Link href="/computervision" color="teal.200">
             Digit Recognition
           </Link>
         </Stack>

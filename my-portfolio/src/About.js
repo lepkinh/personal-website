@@ -41,7 +41,7 @@ function About() {
             <Link href="/cv" color="teal.200">
               CV
             </Link>
-            <Link href="/" color="teal.200">
+            <Link href="/computervision" color="teal.200">
               Digit Recognition
             </Link>
           </HStack>
@@ -94,7 +94,7 @@ function About() {
           <Link href="/about" color="teal.200">About</Link>
           <Link href="/building" color="teal.200">Projects</Link>
           <Link href="/cv" color="teal.200">CV</Link>
-          <Link href="/" color="teal.200">
+          <Link href="/computervision" color="teal.200">
             Digit Recognition
           </Link>
         </Stack>
