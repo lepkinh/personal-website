@@ -60,7 +60,7 @@ function App() {
               CV
             </Link>
             <Link href="/computervision" color="teal.200">
-              Digit Recognition
+              Computer Vision
             </Link>
           </HStack>
         </Flex>
@@ -141,7 +141,7 @@ function App() {
             CV
           </Link>
           <Link href="/computervision" color="teal.200">
-            Digit Recognition
+            Computer Vision
           </Link>
         </Stack>
 

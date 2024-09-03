@@ -42,7 +42,7 @@ function About() {
               CV
             </Link>
             <Link href="/computervision" color="teal.200">
-              Digit Recognition
+              Computer Vision
             </Link>
           </HStack>
         </Flex>
@@ -95,7 +95,7 @@ function About() {
           <Link href="/building" color="teal.200">Projects</Link>
           <Link href="/cv" color="teal.200">CV</Link>
           <Link href="/computervision" color="teal.200">
-            Digit Recognition
+            Computer Vision
           </Link>
         </Stack>
 
