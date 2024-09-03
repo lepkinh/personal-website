@@ -51,10 +51,10 @@ function About() {
         {/* Text */}
         <VStack spacing={1} align="start">
           <Heading as="h1" size="md" color="teal.200" mt={6}>
-            
+            Under construction...
           </Heading>
           <Text fontSize="md" color="gray.400" mt={2}>
-            
+            Should exist within a day or two!
           </Text>
         </VStack>
 
