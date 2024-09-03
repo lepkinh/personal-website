@@ -26,18 +26,20 @@ function Cv() {
         <Flex justifyContent="space-between" alignItems="center" mb={10}>
           <HStack spacing={4}>
             
-            <a href="/"><Box borderRadius="full" overflow="hidden"><Image src={Guh} alt="Guh" boxSize={50} objectFit="cover"/></Box></a>
+            <a href="/"><Box borderRadius="full" overflow="hidden"><Image src={Guh} alt="Guh" boxSize={10} objectFit="cover"/></Box></a>
 
             <Link href="/" color="teal.200" fontSize="xl">
               Home
             </Link>
+
           </HStack>
           <HStack spacing={6}>
+            <Link color="gray.900"></Link> {/* Spacer for mobile view */}
             <Link href="/about" color="teal.200">
               About
             </Link>
             <Link href="/building" color="teal.200">
-              Building
+              Projects
             </Link>
             <Link href="/cv" color="teal.200">
               CV
@@ -85,7 +87,7 @@ function Cv() {
         <Stack direction="row" spacing={4} justify="center" mt={10}>
           <Link href="/" color="teal.200">Home</Link>
           <Link href="/about" color="teal.200">About</Link>
-          <Link href="/building" color="teal.200">Code & Building</Link>
+          <Link href="/building" color="teal.200">Projects</Link>
           <Link href="/cv" color="teal.200">CV</Link>
           <Link href="/" color="teal.200">
             Digit Recognition

@@ -41,18 +41,19 @@ function App() {
         <Flex justifyContent="space-between" alignItems="center" mb={10}>
           <HStack spacing={4}>
             
-            <a href="/"><Box borderRadius="full" overflow="hidden"><Image src={Guh} alt="Guh" boxSize={50} objectFit="cover"/></Box></a>
+            <a href="/"><Box borderRadius="full" overflow="hidden"><Image src={Guh} alt="Guh" boxSize={10} objectFit="cover"/></Box></a>
 
             <Link href="/" color="teal.200" fontSize="xl">
               Home
             </Link>
           </HStack>
           <HStack spacing={6}>
+            <Link color="gray.900"></Link> {/* Spacer for mobile view */}
             <Link href="/about" color="teal.200">
               About
             </Link>
             <Link href="/building" color="teal.200">
-              Building
+              Projects
             </Link>
             <Link href="/cv" color="teal.200">
               CV
@@ -133,7 +134,7 @@ function App() {
             About
           </Link>
           <Link href="/building" color="teal.200">
-            Building
+            Projects
           </Link>
           <Link href="/cv" color="teal.200">
             CV

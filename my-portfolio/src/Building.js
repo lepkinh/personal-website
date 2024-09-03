@@ -25,18 +25,19 @@ function Building() {
         <Flex justifyContent="space-between" alignItems="center" mb={10}>
           <HStack spacing={4}>
             
-            <a href="/"><Box borderRadius="full" overflow="hidden"><Image src={Guh} alt="Guh" boxSize={50} objectFit="cover"/></Box></a>
+            <a href="/"><Box borderRadius="full" overflow="hidden"><Image src={Guh} alt="Guh" boxSize={10} objectFit="cover"/></Box></a>
 
             <Link href="/" color="teal.200" fontSize="xl">
               Home
             </Link>
           </HStack>
           <HStack spacing={6}>
+            <Link color="gray.900"></Link> {/* Spacer for mobile view */}
             <Link href="/about" color="teal.200">
               About
             </Link>
             <Link href="/building" color="teal.200">
-              Building
+              Projects
             </Link>
             <Link href="/cv" color="teal.200">
               CV
@@ -49,30 +50,26 @@ function Building() {
 
         {/* Title */}
         <VStack spacing={1} align="start">
-          <Heading as="h1" size="lg">
-            Code & Building
-          </Heading>
+          <Heading as="h2" size="md" color="teal.200">Coding & Building</Heading>
+
           <Text fontSize="lg" color="gray.400">
             Full-stack development, machine learning, and soon to be hardware projects.
           </Text>
         </VStack>
 
         {/* Software Projects Section */}
-
-
         <VStack spacing={6} align="start" mt={10}>
-          <Heading as="h2" size="lg" color="teal.200">
-            Software Projects
-          </Heading>
+          <Heading as="h2" size="md" color="teal.200">Software Projects</Heading>
 
           {/* Software 1 - Sodoku Solver */}
+          {/*
           <Box p={5} shadow="lg" borderWidth="1px" bg="gray.800">
             <Heading as="h3" size="md" color="teal.200">
               Sodoku Solver in C++ Terminal
             </Heading>
             <Text fontSize="lg" color="gray.300" mb={4} margin={5}>
               Desc.
-            </Text>
+            </Text> */}
 
             {/* Screenshots 
             <HStack spacing={4} justify="center">
@@ -88,13 +85,14 @@ function Building() {
               </Link>, cleaner code on release v1.1 under the 'Tags' section.
               
             </Text> */}
-          </Box>
+          {/*</Box> */}
 
           {/* Software 2 - 2D Physics Engine */}
           <Box p={5} shadow="lg" borderWidth="1px" bg="gray.800">
-            <Heading as="h3" size="md" color="teal.200">
+            <Heading as="h2" size="md" color="teal.200">
               2D Physics Engine in C++ w/ SFML (WIP, not yet functional)
             </Heading>
+
             <Text fontSize="lg" color="gray.300" mb={4} margin={5}>
               This is a 2D physics engine that simulates "particles" with mass and velocity. Properties are typically stored as 2D vectors (s, v, a, f) or as floats (r, m, ...). This project is not particularly novel but it is really challenging my OOP and low level programming skills and I am learning a lot through this process. Screenshots coming soon.
             </Text>
@@ -124,6 +122,9 @@ function Building() {
             <Heading as="h3" size="md" color="teal.200">
               User-Drawn Digit Recognizor Webapp (WIP, functional)
             </Heading>
+            <Text fontSize="lg" color="gray.300" mb={4} margin={5}>
+              Live <Link href="/digit-recognition" color="teal.200">here</Link>.
+            </Text>
             <Text fontSize="lg" color="gray.300" mb={4} margin={5}>
               This is a web app that uses machine learning to recognize handwritten digits by the user. The model is a computer vision neural network that I created and trained using TensorFlow and NumPy on the MNIST dataset, it has a ~98% accuracy. The app is built using React for the frontend and Flask for the backend. Below are some screenshots and a link to the GitHub repo.
             </Text>
@@ -170,7 +171,7 @@ function Building() {
         <Stack direction="row" spacing={4} justify="center" mt={10}>
           <Link href="/" color="teal.200">Home</Link>
           <Link href="/about" color="teal.200">About</Link>
-          <Link href="/building" color="teal.200">Code & Building</Link>
+          <Link href="/building" color="teal.200">Projects</Link>
           <Link href="/cv" color="teal.200">CV</Link>
           <Link href="/" color="teal.200">
             Digit Recognition
