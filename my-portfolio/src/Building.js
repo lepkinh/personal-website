@@ -113,7 +113,7 @@ function Building() {
 
         {/* Machine Learning Projects Section */}
         <VStack spacing={6} align="start" mt={10}>
-          <Heading as="h2" size="lg" color="teal.200">
+          <Heading as="h2" size="md" color="teal.200">
             Machine Learning Projects
           </Heading>
 

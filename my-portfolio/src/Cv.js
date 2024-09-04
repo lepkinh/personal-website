@@ -2,7 +2,7 @@ import React from 'react';
 import { ChakraProvider, Box, Container, Flex, Image, Heading, Text, Button, VStack, Link, extendTheme, Stack, Icon, HStack } from '@chakra-ui/react';
 import { FaDownload } from 'react-icons/fa';
 import { FaLinkedin, FaGithub, FaTwitter } from 'react-icons/fa';
-/* import resume from './assets/resume_nicolaslepki_1sep24.pdf'; */
+import resume from './assets/nicolaslepki_resume_2024.pdf';
 import Guh from './assets/Guh.png';
 
 // Darker theme
@@ -62,7 +62,7 @@ function Cv() {
           {/* PDF Embed Section */}
           <Box p={5} shadow="md" borderWidth="1px" bg="gray.800" width="100%" height="2xl" overflow="hidden">
             <iframe 
-              src="" /* replace with src={resume} , when import my actual resume */
+              src={resume}
               title="CV PDF" 
               width="100%" 
               height="100%" 
