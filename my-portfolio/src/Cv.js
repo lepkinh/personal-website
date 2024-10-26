@@ -5,13 +5,38 @@ import { FaLinkedin, FaGithub, FaTwitter } from 'react-icons/fa';
 import resume from './assets/nicolaslepki_resume_2024.pdf';
 import Guh from './assets/Guh.png';
 
-// Darker theme
+// Lightish theme
 const theme = extendTheme({
   styles: {
     global: {
       body: {
-        bg: 'gray.900', // Dark background color
-        color: 'gray.200', // Light text color
+        bg: "white", // Light background color
+        color: "gray.700", // Dark text color for readability
+        fontFamily: "Arial, sans-serif", // Ensure a clean, modern look
+      },
+    },
+  },
+  components: {
+    Heading: {
+      baseStyle: {
+        color: "gray.800", // Darker color for headings
+        fontWeight: "bold",
+      },
+      sizes: {
+        xl: { fontSize: "3xl" }, // Adjust large heading sizes as in the example
+        lg: { fontSize: "2xl" },
+        md: { fontSize: "xl" },
+      },
+    },
+    Text: {
+      baseStyle: {
+        color: "gray.600", // Subtle color for descriptive text
+      },
+    },
+    Container: {
+      baseStyle: {
+        maxW: "container.md",
+        p: 4,
       },
     },
   },
@@ -20,32 +45,22 @@ const theme = extendTheme({
 function Cv() {
   return (
     <ChakraProvider theme={theme}>
-      <Container maxW="container.md" py={10}>
+      <Container maxW="container.md" py={10} centerContent>
 
         {/* Header */}
         <Flex justifyContent="space-between" alignItems="center" mb={10}>
-          <HStack spacing={4}>
-            
-            <a href="/"><Box borderRadius="full" overflow="hidden"><Image src={Guh} alt="Guh" boxSize={10} objectFit="cover"/></Box></a>
-
-            <Link href="/" color="teal.200" fontSize="xl">
+          <HStack spacing={6}>
+            <Link href="/" color="gray.800" fontWeight="bold">
               Home
             </Link>
-
-          </HStack>
-          <HStack spacing={6}>
-            <Link color="gray.900"></Link> {/* Spacer for mobile view */}
-            <Link href="/about" color="teal.200">
-              About
+            <Link href="/blog" color="gray.800" fontWeight="bold">
+              Blog
             </Link>
-            <Link href="/building" color="teal.200">
-              Projects
+            <Link href="/projects" color="gray.800" fontWeight="bold">
+              Technical Portfolio
             </Link>
-            <Link href="/cv" color="teal.200">
+            <Link href="/cv" color="gray.800" fontWeight="bold">
               CV
-            </Link>
-            <Link href="/computervision" color="teal.200">
-              Computer Vision
             </Link>
           </HStack>
         </Flex>
@@ -55,12 +70,20 @@ function Cv() {
           <Heading as="h1" size="lg">
             
           </Heading>
-          <Text fontSize="md" color="gray.400" textAlign="center">
-            Below is a copy of my CV. Button to download is below the PDF.
-          </Text>
+          {/* Download Button */}
+          <Button
+            leftIcon={<FaDownload />}
+            colorScheme="gray"
+            variant="solid"
+            as={Link}
+            href="/path-to-your-cv.pdf"
+            download="Your_Name_CV.pdf"
+          >
+            Download CV
+          </Button>
 
           {/* PDF Embed Section */}
-          <Box p={5} shadow="md" borderWidth="1px" bg="gray.800" width="100%" height="2xl" overflow="hidden">
+          <Box p={5} shadow="md" borderWidth="1px" width="xl" height="xl" overflow="hidden">
             <iframe 
               src={resume}
               title="CV PDF" 
@@ -70,37 +93,16 @@ function Cv() {
             />
           </Box>
 
-          {/* Download Button */}
-          <Button
-            leftIcon={<FaDownload />}
-            colorScheme="teal"
-            variant="solid"
-            as={Link}
-            href="/path-to-your-cv.pdf"
-            download="Your_Name_CV.pdf"
-          >
-            Download CV
-          </Button>
+          
         </VStack>
-
-        {/* Links to Other Routes */}
-        <Stack direction="row" spacing={4} justify="center" mt={10}>
-          <Link href="/" color="teal.200">Home</Link>
-          <Link href="/about" color="teal.200">About</Link>
-          <Link href="/building" color="teal.200">Projects</Link>
-          <Link href="/cv" color="teal.200">CV</Link>
-          <Link href="/computervision" color="teal.200">
-            Computer Vision
-          </Link>
-        </Stack>
 
         {/* Links to Socials */}
         <HStack spacing={6} justify="center" mt={4}>
           <Link href="https://www.linkedin.com/in/nicolaslepki/" isExternal>
-            <Icon as={FaLinkedin} boxSize={8} color="teal.200" />
+            <Icon as={FaLinkedin} boxSize={6} color="grey.200" />
           </Link>
           <Link href="https://github.com/lepkinh" isExternal>
-            <Icon as={FaGithub} boxSize={8} color="teal.200" />
+            <Icon as={FaGithub} boxSize={6} color="grey.200" />
           </Link>
           {/*
           <Link href="" isExternal>
@@ -108,6 +110,9 @@ function Cv() {
           </Link>
           */}
         </HStack>
+        <Text fontSize="2xs" color="gray.400" px={4} mt={4} textAlign="center">
+          © 2024 Nicolas Lepki
+        </Text>
       </Container>
     </ChakraProvider>
   );

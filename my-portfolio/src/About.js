@@ -35,14 +35,11 @@ function About() {
             <Link href="/about" color="teal.200">
               About
             </Link>
-            <Link href="/building" color="teal.200">
-              Projects
+            <Link href="/projects" color="teal.200">
+              Technical Projects
             </Link>
             <Link href="/cv" color="teal.200">
               CV
-            </Link>
-            <Link href="/computervision" color="teal.200">
-              Computer Vision
             </Link>
           </HStack>
         </Flex>
@@ -92,11 +89,8 @@ function About() {
         <Stack direction="row" spacing={4} justify="center" mt={10}>
           <Link href="/" color="teal.200">Home</Link>
           <Link href="/about" color="teal.200">About</Link>
-          <Link href="/building" color="teal.200">Projects</Link>
+          <Link href="/projects" color="teal.200">Projects</Link>
           <Link href="/cv" color="teal.200">CV</Link>
-          <Link href="/computervision" color="teal.200">
-            Computer Vision
-          </Link>
         </Stack>
 
         {/* Links to Socials */}
